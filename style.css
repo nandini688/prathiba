@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.out{
+    border: solid 1px;
+    height: 160px;
+    display: flex;
+}#in1,#in2,#in3{
+    border: solid 1px;
+    height: 160px;
+    
+}
+#in1{
+    width: 230px;
+}
+#in2{
+    width: 930px;
+    text-align: center;
+    background-color: cyan;
+}
+#in3{
+    width: 400px;
+}
+#clgname{
+    font-size: 50px;
+    color: red;
+}
+#text1{
+    font-size: 20px;
+    color: brown;
+}
+#scrolltext{
+    font-size: 25px;
+    color: navy;
+    font-weight: bold;
+}+
+#navbox{
+ border: solid 1px;
+ height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 150px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background-color: palevioletred;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+ul li ul li{
+display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: green;
+}
+.outbox{
+    border: solid 1px;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height: 380px;
+}
+#inbox1{
+    width: 620px;
+    background-image: url(bg1.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: 620px 380px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(bg2.jpeg);
+    }
+    10%{
+        background-image: url(bg3.jpeg);
+    }
+    20%{
+        background-image: url(bg3.jpeg);
+    }
+    30%{
+        background-image: url(bg4.avif);
+    }
+    40%{
+        background-image: url(bg5.jpg);
+    }
+}
+#inbox2,#inbox3{
+    width: 350px;
+    text-align: center;
+}
